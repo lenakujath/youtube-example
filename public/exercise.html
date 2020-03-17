@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 
+        need: result will return an array with various arrays
+
+
+        
+          */
+
+
+      /*      function chessboard (){
+
+          let letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
+
+               let mixA = [];
+               let mixB = [];
+               let mixC = [];
+               let mixD = [];
+               let mixE = [];
+               let mixF = [];
+               let mixG = [];
+               let mixH= [];
+
+               let MixAA = [];
+               let MixBB = [];
+               let MixCC = [];
+               let MixDD = [];
+               let MixEE = [];
+               let MixFF = [];
+               let MixGG = [];
+               let MixHH = [];         
+
+               for (let i = 0; i < letters.length; i ++){
+               
+               mixA.push(letters[0]);
+               mixB.push(letters[1]);
+               mixC.push(letters[2]);
+               mixD.push(letters[3]);
+               mixE.push(letters[4]);
+               mixF.push(letters[5]);
+               mixG.push(letters[6]);
+               mixH.push(letters[7]);      
+
+               for (let j = 0; j <mixA.length; j++){
+
+                    MixAA.push( mixA[j]+ '-' + [j+1] );
+                    MixAA.push(mixA[j]+ '-' + [j+2]);
+                    MixAA.push(mixA[j]+ '-' + [j+3]);
+                    MixAA.push(mixA[j]+ '-' + [j+4]);
+                    MixAA.push(mixA[j]+ '-' + [j+5]);
+                    MixAA.push(mixA[j]+ '-' + [j+6]);
+                    MixAA.push(mixA[j]+ '-' + [j+7]);
+                    MixAA.push(mixA[j]+ '-' + [j+8]);
+
+                    MixBB.push( mixB[j]+ '-' + [j+1] );
+                    MixBB.push(mixB[j]+ '-' + [j+2]);
+                    MixBB.push(mixB[j]+ '-' + [j+3]);
+                    MixBB.push(mixB[j]+ '-' + [j+4]);
+                    MixBB.push(mixB[j]+ '-' + [j+5]);
+                    MixBB.push(mixB[j]+ '-' + [j+6]);
+                    MixBB.push(mixB[j]+ '-' + [j+7]);
+                    MixBB.push(mixB[j]+ '-' + [j+8]);
+
+                    MixCC.push( mixC[j]+ '-' + [j+1] );
+                    MixCC.push(mixC[j]+ '-' + [j+2]);
+                    MixCC.push(mixC[j]+ '-' + [j+3]);
+                    MixCC.push(mixC[j]+ '-' + [j+4]);
+                    MixCC.push(mixC[j]+ '-' + [j+5]);
+                    MixCC.push(mixC[j]+ '-' + [j+6]);
+                    MixCC.push(mixC[j]+ '-' + [j+7]);
+                    MixCC.push(mixC[j]+ '-' + [j+8]);
+
+                    MixDD.push( mixD[j]+ '-' + [j+1] );
+                    MixDD.push(mixD[j]+ '-' + [j+2]);
+                    MixDD.push(mixD[j]+ '-' + [j+3]);
+                    MixDD.push(mixD[j]+ '-' + [j+4]);
+                    MixDD.push(mixD[j]+ '-' + [j+5]);
+                    MixDD.push(mixD[j]+ '-' + [j+6]);
+                    MixDD.push(mixD[j]+ '-' + [j+7]);
+                    MixDD.push(mixD[j]+ '-' + [j+8]);
+
+                    MixEE.push( mixE[j]+ '-' + [j+1] );
+                    MixEE.push(mixE[j]+ '-' + [j+2]);
+                    MixEE.push(mixE[j]+ '-' + [j+3]);
+                    MixEE.push(mixE[j]+ '-' + [j+4]);
+                    MixEE.push(mixE[j]+ '-' + [j+5]);
+                    MixEE.push(mixE[j]+ '-' + [j+6]);
+                    MixEE.push(mixE[j]+ '-' + [j+7]);
+                    MixEE.push(mixE[j]+ '-' + [j+8]);
+
+                    MixFF.push( mixF[j]+ '-' + [j+1] );
+                    MixFF.push(mixF[j]+ '-' + [j+2]);
+                    MixFF.push(mixF[j]+ '-' + [j+3]);
+                    MixFF.push(mixF[j]+ '-' + [j+4]);
+                    MixFF.push(mixF[j]+ '-' + [j+5]);
+                    MixFF.push(mixF[j]+ '-' + [j+6]);
+                    MixFF.push(mixF[j]+ '-' + [j+7]);
+                    MixFF.push(mixF[j]+ '-' + [j+8]);
+
+                    MixGG.push(mixG[j]+ '-' + [j+1] );
+                    MixGG.push(mixG[j]+ '-' + [j+2]);
+                    MixGG.push(mixG[j]+ '-' + [j+3]);
+                    MixGG.push(mixG[j]+ '-' + [j+4]);
+                    MixGG.push(mixG[j]+ '-' + [j+5]);
+                    MixGG.push(mixG[j]+ '-' + [j+6]);
+                    MixGG.push(mixG[j]+ '-' + [j+7]);
+                    MixGG.push(mixG[j]+ '-' + [j+8]);
+
+                    MixHH.push(mixH[j]+ '-' + [j+1] );
+                    MixHH.push(mixH[j]+ '-' + [j+2]);
+                    MixHH.push(mixH[j]+ '-' + [j+3]);
+                    MixHH.push(mixH[j]+ '-' + [j+4]);
+                    MixHH.push(mixH[j]+ '-' + [j+5]);
+                    MixHH.push(mixH[j]+ '-' + [j+6]);
+                    MixHH.push(mixH[j]+ '-' + [j+7]);
+                    MixHH.push(mixH[j]+ '-' + [j+8]);
+
+                    
+
+               
+};
+
+                     
+
+              let chess = [];
+
+              chess.push(MixAA, MixBB, MixCC, MixDD, MixEE, MixFF, MixGG, MixHH);
+
+              return chess;
+           }
+      } 
+
+
+     console.log(chessboard())
+     ; */ 
+
+     let letter
+     let letterArr = []
+     
+     for (let i=0; i<8; i++) {
+    letter = String.fromCharCode(97 + i);
+
+    letterArr.push(letter)
+
+}
+let number
+let numberArr = [];
+for (let i=1; i<9; i++) {
+    number = i;
+    numberArr.push(number)
+}
+
+  
+var newarray = numberArr.map(myFunction)
+
+function myFunction(letter) {
+    let sum;
+    
+    for (let j = 0; j < 8; j++){
+      sum  =  letterArr[0] + ' - ' + letter;
+    }
+  return sum
+}
+
+console.log (newarray)
+           
+
+          
+
+          
+
+    
+  
+    </script>
+</body>
+</html>
